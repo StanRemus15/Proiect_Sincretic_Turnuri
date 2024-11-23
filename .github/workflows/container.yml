@@ -26,7 +26,7 @@ jobs:
     - name: Build the Docker image
       id: docker_build
       env:
-        IMAGE_NAME: ghcr.io/${{ github.repository }}/Proiect_Sincretic_Turnuri
+        IMAGE_NAME: ghcr.io/${{ github.repository }}/proiectsincreticturnuri
       run: |
         docker build . --file Dockerfile --tag $IMAGE_NAME:latest
         docker push $IMAGE_NAME:latest
